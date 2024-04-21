@@ -48,10 +48,10 @@ public class Sistema {
         System.out.println("2. Cadastrar Calça");
         System.out.println("3. Cadastrar Acessório");
         System.out.println("4. Exibir Lista de Roupas");
-        System.out.println("5. Excluir Roupa por ID");
+        System.out.println("5. Excluir Roupa pelo ID");
         System.out.println("6. Excluir Todos os Itens");
-        System.out.println("7. Editar Item");
-        System.out.println("8. Buscar Item");
+        System.out.println("7. Editar Item pelo ID");
+        System.out.println("8. Buscar Item pelo ID");
         System.out.println("0. Sair do Sistema");
         System.out.println("-----------------\n");
     }
