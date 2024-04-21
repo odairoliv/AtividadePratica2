@@ -29,6 +29,9 @@ public class Sistema {
                 case 7:
                     editarItem();
                     break;
+                case 8:
+                    buscarPorId();
+                    break;
                 case 0:
                     System.out.println("Saindo do sistema...");
                     break;
@@ -48,6 +51,7 @@ public class Sistema {
         System.out.println("5. Excluir Roupa por ID");
         System.out.println("6. Excluir Todos os Itens");
         System.out.println("7. Editar Item");
+        System.out.println("8. Buscar Item");
         System.out.println("0. Sair do Sistema");
         System.out.println("-----------------\n");
     }
@@ -182,6 +186,21 @@ public class Sistema {
             }
         } else {
             System.out.println("Item não encontrado.");
+        }
+    }
+
+    private static void buscarPorId(){
+        System.out.println("\nBUSCAR ITEM:");
+        System.out.print("\ninforme o ID: ");
+        int id = Console.scanInt();
+
+        Vesturario itemEncontrado = GuardaRoupa.buscarPorId(id);
+
+        if (itemEncontrado != null) {
+            System.out.println("\nItem encontrado:");
+            System.out.println(itemEncontrado);
+        }else{
+            System.out.println("\nNenhum item encontrado com o ID informado.");
         }
     }
     
