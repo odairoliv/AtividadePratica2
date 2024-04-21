@@ -2,7 +2,7 @@ public class Acessorio extends Vesturario{
     private String material;
 
     public Acessorio(int id, String tipo, String marca, String cor, String tamanho, int ano, String material) {
-        super(id, "Acessorio", marca, cor, tamanho, ano);
+        super(id, "Acessório", marca, cor, tamanho, ano);
         this.material = material;
     }
 

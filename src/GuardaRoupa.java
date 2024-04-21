@@ -64,4 +64,25 @@ public class GuardaRoupa {
         listaRoupas.clear();
         System.out.println("Todos os itens foram excluídos.");
     }
+
+    public static Vesturario buscarPorId(int id) {
+        for (Vesturario roupa : listaRoupas) {
+            if (roupa.getId() == id) {
+                return roupa;
+            }
+        }
+        return null;
+    }
+    
+    public static boolean editarItem(Vesturario itemEditado) {
+        for (int i = 0; i < listaRoupas.size(); i++) {
+            Vesturario itemAtual = listaRoupas.get(i);
+            if (itemAtual.getId() == itemEditado.getId()) {
+                listaRoupas.set(i, itemEditado);
+                return true;
+            }
+        }
+        return false;
+    }
+    
 }
